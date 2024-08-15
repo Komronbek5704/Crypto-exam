@@ -47,8 +47,6 @@ const CryptoPage = () => {
     localStorage.setItem("savedCryptos", JSON.stringify(selectedCryptos));
   }, [selectedCryptos]);
 
-  const changePage = (page) => setPageIndex(page);
-
   const toggleCryptoSelection = (crypto) => {
     const cryptoId = crypto.id;
     setSelectedCryptos((previousSelection) =>
